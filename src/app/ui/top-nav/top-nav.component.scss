@@ -4,9 +4,10 @@ nav {
   margin-bottom: 25px;
   padding: 0 5vw;
   padding-right: 60px;
+  background-color:green;
 
   .nav-item {
-    color: gray;
+    color: white;
     font-weight: normal;
     transition: color 0.3s ease;
     &:hover {
