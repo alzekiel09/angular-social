@@ -3,8 +3,12 @@
   <span class="button is-small is-info" (click)='addHeartToNote(note.hearts)'>
     {{ note.hearts || 0 }}<i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;Like
   </span>
+  <span class="button is-small is-warning" (click)='addDislikeToNote(note.dislike)'>
+    {{ note.dislike || 0 }}<i class="fa fa-thumbs-down"></i>&nbsp;&nbsp;Dislike
+  </span>
   <span class="button is-small is-danger" (click)='deleteNote(note?.id)'>
     <i class="fa fa-trash"></i>&nbsp;&nbsp;Delete
   </span>
   <p>This post has been like {{ note.hearts || 0 }} times.</p>
-</div>
+  <p>This post has been dislike {{ note.dislike || 0 }} times.</p>
+</div><hr>
